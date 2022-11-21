@@ -32,18 +32,18 @@ else
 
 Console.WriteLine("Введите пятизначное число");
 int number1 = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[6];
-int i = 1;
-while (i<=5)
+int[] array = new int[5];
+int i = 0;
+while (i<=4)
 {
     array[i] = number1%10;
     Console.WriteLine($"элемент {i} = {array[i]}");
     number1 = number1/10;
     i++;
 }
-if (array[1] == array[5])
+if (array[0] == array[4])
 {
-    if (array[2] == array[4])
+    if (array[1] == array[3])
     {
         Console.WriteLine("Данное число является полиндромом");
     }
