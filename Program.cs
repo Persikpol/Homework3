@@ -79,3 +79,14 @@ B[2] = Convert.ToInt32(Console.ReadLine());
 
 int d = Convert.ToInt32(Math.Sqrt(Math.Pow((B[0] - A[0]), 2) + Math.Pow((B[1] - A[1]), 2) + Math.Pow((B[2] - A[2]), 2)));
 Console.WriteLine("Расстояние между двумя точками = " + d);
+
+// Task 23
+
+Console.WriteLine("Введите число");
+int N = Convert.ToInt32(Console.ReadLine());
+int j = 1;
+while (j<N)
+{
+    Console.WriteLine(Math.Pow(j, 3));
+    j++;
+}
